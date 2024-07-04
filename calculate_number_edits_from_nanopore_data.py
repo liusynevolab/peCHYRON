@@ -6,6 +6,8 @@
 ###Oxford Nanopore Ligation Kit 14.)
 ###Written by ChatGPT3.5 and Theresa Loveless.
 
+###This script was used for Figure 3 and Extended Data Figures 4-5.
+
 import pandas as pd
 
 # Create an empty DataFrame to store the results
