@@ -15,7 +15,10 @@ Then, if analyzing overall efficiency of editing is necessary, run calculate_num
 
 First, we demultiplex using the separate_by_barcodes_modified.py script from the liusynevolab/CHYRON-NGS repository. Then, if desired we combine forward and reverse reads using PEAR, as described in the CHYRON-NGS repository. However, we normally use forward reads only, as the repetitive nature of the peCHYRON locus can lead to errors in the combination process.
 
-Next, we analyze
+Next, we analyze in the same way as nanopore data.
+
+For samples in which each recording locus integrated into the cell line is tagged with a unique static barcode, if desirable the peCHYRON insertions statistics for each static barcode can be calculated, and specific static barcodes can be filtered.
+For example, to determine the edits acquired in one biological replicate of iMEF cells, as shown in Extended Data Figure 6d, you would run "grab_static_and_insertion.py," then "static_stats.py," then "good_statics_only.py," on the iMEF_biorep1 fastq files in this repository.
 
 # Please find in other repositories at github.com/liusynevolab:
 
